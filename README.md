@@ -1,5 +1,14 @@
 # algorithm-vue
 
+### intro
+
+this is a project for practice algorithm, and as notes。
+
+you can find this original question at [leetcode-cn.com](https://leetcode-cn.com/)
+
+
+
+
 ## Project setup
 ```
 npm install
