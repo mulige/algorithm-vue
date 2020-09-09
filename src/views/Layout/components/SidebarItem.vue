@@ -52,6 +52,7 @@ export default {
       font-size: 14px;
       font-weight: 600;
       color: #e3e3e3;
+      text-shadow: 0 0 1px #000;
     }
   }
 }
