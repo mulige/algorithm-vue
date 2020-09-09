@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/default.min.css">
+  <script src="./mouse-click.js"></script>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <canvas id="catw" width="200" height="200"
+    style="position: fixed; bottom: 20px; right: 0px;pointer-events: none;"></canvas>
+  <!-- built files will be auto injected -->
+</body>
+<!-- <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/highlight.min.js"></script> -->
+<script src="./mouseFlow.js"></script>
+<span class="js-cursor-container"></span>
+<script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+<!-- <script src="https://cdn.zhangxinxu.com/sp/demo/live2d/live2d/js/live2d.js"></script> -->
+<script src="./console-own.js"></script>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  // loadlive2d(
+  //   "catw",
+  //   "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-tororo/assets/tororo.model.json"
+  // );
+
+  (function () {
+    L2Dwidget.init({
+      "model": {
+        jsonPath: "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-tororo/assets/tororo.model.json",
+        "scale": 1
+      },
+      "display": {
+        "position": "right",
+        "width": 100,
+        "height": 200,
+        "vOffset": -100
+      },
+      "mobile": {
+        "show": false,
+        "scale": 0.5
+      },
+      "react": {
+        "opacityDefault": 1,
+        "opacityOnHover": 0.2
+      }
+    })
+  })();
+</script>
+
 </html>
