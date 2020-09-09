@@ -1,12 +1,16 @@
 # algorithm-vue
 
-### intro
+## intro
 
 this is a project for practice algorithm, and as notes。
 
 you can find this original question at [leetcode-cn.com](https://leetcode-cn.com/)
 
+There is a practical functions for vscode, By using it, you are  able to quickly generate the template file.
 
+But something is wrong for showing "$", you can see the "$" is disappear in this file, you need to add it by youSelf.
+
+That is all.
 
 
 ## Project setup
