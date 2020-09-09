@@ -12,7 +12,7 @@ But something is wrong for showing "$", you can see the "$" is disappear in this
 
 That is all.
 
-This is at (__dirname, extra). en ... i guess you know where is it ,and how to use it . After all, its so easy!!
+This file is at (__dirname, extra). en ... i guess you know where is it ,and how to use it . After all, its so easy!!
 
 ## Project setup
 ```
