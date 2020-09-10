@@ -41,7 +41,7 @@
                         return fir.val - sec.val
                     })
                     if (!temp.length) return null
-                    for (let i = 0, len = temp.length; i < len; i++) {
+                    for (let i = 0, len = temp.length; i < len - 1; i++) {
                         temp[i].next = temp[i + 1]
                     }
                     return temp[0]
