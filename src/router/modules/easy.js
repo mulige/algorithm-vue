@@ -185,7 +185,15 @@ export default [
           title: '107-二叉树的层次遍历',
           parentPath: '/easy'
         }
-      }
+      },
+      {
+        path: 'singleNumber',
+        component: () => import(/* webpackChunkName: "136-singleNumber" */ '@/views/easy/136-singleNumber.vue'),
+        meta: {
+          title: '136-只出现一次的数字',
+          parentPath: '/easy'
+        }
+      },
     ]
   }
 

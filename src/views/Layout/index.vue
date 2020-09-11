@@ -11,21 +11,21 @@
 </template>
 
 <script>
-import { addRoutes } from '@/router/index'
-import SidebarItem from './components/SidebarItem'
+import { addRoutes } from "@/router/index";
+import SidebarItem from "./components/SidebarItem";
 export default {
-  name: '',
-  data () {
+  name: "",
+  data() {
     return {
-      routesData: addRoutes
-    }
+      routesData: addRoutes,
+    };
   },
   components: { SidebarItem },
-  created () {},
+  created() {},
   computed: {},
   watch: {},
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style scoped lang="scss">
@@ -54,6 +54,7 @@ export default {
     background-color: rgba(245, 245, 245, 0.5);
     height: 100%;
     overflow: scroll;
+    box-sizing: border-box;
   }
 }
 </style>
