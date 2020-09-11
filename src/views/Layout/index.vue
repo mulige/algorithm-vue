@@ -39,6 +39,7 @@ export default {
     background-color: rgba(255, 250, 250, 0.5);
     height: 100%;
     overflow: scroll;
+    
     .tabBarTitle {
       width: 100%;
       text-align: center;

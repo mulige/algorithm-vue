@@ -1,12 +1,12 @@
 <template>
   <div class="menu-wrapper">
     <div v-for="(item, index) in routesdata" :key="index">
-      <p
+      <a
         @click="toRoute"
         :data-path="item.meta.parentPath"
         :data-ownpath="item.path"
         :data-redirect="item.redirect"
-      >{{item.meta.title}}</p>
+      >{{item.meta.title}}</a>
       <sidebar-item :routesdata="item.children?item.children: [] " />
     </div>
   </div>
@@ -28,6 +28,7 @@ export default {
   watch: {},
   methods: {
     toRoute(e) {
+      e.preventDefault();
       this.$store.commit("hideResult");
       const parentPath = e.target.getAttribute("data-path");
       const ownPath = e.target.getAttribute("data-ownpath");
@@ -46,13 +47,18 @@ export default {
 .menu-wrapper {
   div {
     padding-left: 10px;
-    p {
+    a {
       cursor: pointer;
       line-height: 30px;
       font-size: 14px;
       font-weight: 600;
       color: #e3e3e3;
       text-shadow: 0 0 1px #000;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #40e0d0;
+        color: #40e0d0;
+      }
     }
   }
 }
