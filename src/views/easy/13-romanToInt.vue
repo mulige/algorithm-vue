@@ -78,18 +78,18 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 export default {
-  name: "",
-  data() {
-    return {};
+  name: '',
+  data () {
+    return {}
   },
   computed: {
-    ...mapState(["showResult", "textInfo"]),
+    ...mapState(['showResult', 'textInfo'])
   },
   watch: {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style scoped lang='scss'>

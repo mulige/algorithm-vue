@@ -8,9 +8,9 @@
     </p>
     <div class='democode'>
         <p>示例1：</p>
-        <pre>给定数组 <em>nums</em> = <strong>[1,1,2]</strong>, 
+        <pre>给定数组 <em>nums</em> = <strong>[1,1,2]</strong>,
 
-函数应该返回新的长度 <strong>2</strong>, 并且原数组 <em>nums </em>的前两个元素被修改为 <strong><code>1</code></strong>, <strong><code>2</code></strong>。 
+函数应该返回新的长度 <strong>2</strong>, 并且原数组 <em>nums </em>的前两个元素被修改为 <strong><code>1</code></strong>, <strong><code>2</code></strong>。
 
 你不需要考虑数组中超出新长度后面的元素。</pre>
         <p>示例2：</p>
@@ -48,20 +48,20 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 export default {
   name: '',
-  data() {
+  data () {
     return {
-    };
+    }
   },
-  computed: { 
+  computed: {
     ...mapState(['showResult', 'textInfo'])
   },
-  watch:{
+  watch: {
   },
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style scoped lang='scss'>

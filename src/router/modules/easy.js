@@ -193,7 +193,7 @@ export default [
           title: '136-只出现一次的数字',
           parentPath: '/easy'
         }
-      },
+      }
     ]
   }
 

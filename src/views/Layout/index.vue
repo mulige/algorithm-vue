@@ -11,21 +11,21 @@
 </template>
 
 <script>
-import { addRoutes } from "@/router/index";
-import SidebarItem from "./components/SidebarItem";
+import { addRoutes } from '@/router/index'
+import SidebarItem from './components/SidebarItem'
 export default {
-  name: "",
-  data() {
+  name: '',
+  data () {
     return {
-      routesData: addRoutes,
-    };
+      routesData: addRoutes
+    }
   },
   components: { SidebarItem },
-  created() {},
+  created () {},
   computed: {},
   watch: {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style scoped lang="scss">
@@ -39,7 +39,20 @@ export default {
     background-color: rgba(255, 250, 250, 0.5);
     height: 100%;
     overflow: scroll;
-    
+    &::-webkit-scrollbar{/*滚动条整体样式*/
+    width: 0px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+      border-radius: 6px;
+      -webkit-box-shadow: inset 0 0 5px rgba(122, 122, 122, 0.2);
+      background: #7a7a7a;
+    }
+    &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+      -webkit-box-shadow: inset 0 0 5px rgba(122, 122, 122, 0.2);
+      border-radius: 5px;
+      background: #EDEDED;
+    }
     .tabBarTitle {
       width: 100%;
       text-align: center;
@@ -56,6 +69,20 @@ export default {
     height: 100%;
     overflow: scroll;
     box-sizing: border-box;
+    &::-webkit-scrollbar{/*滚动条整体样式*/
+    width: 0px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+      border-radius: 6px;
+      -webkit-box-shadow: inset 0 0 5px rgba(122, 122, 122, 0.2);
+      background: #7a7a7a;
+    }
+    &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+      -webkit-box-shadow: inset 0 0 5px rgba(122, 122, 122, 0.2);
+      border-radius: 5px;
+      background: #EDEDED;
+    }
   }
 }
 </style>

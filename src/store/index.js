@@ -9,12 +9,12 @@ export default new Vuex.Store({
     textInfo: '点击查看'
   },
   mutations: {
-    changeShowStatus(state) {
-      state.showResult = !state.showResult;
+    changeShowStatus (state) {
+      state.showResult = !state.showResult
       if (state.showResult) state.textInfo = '点击隐藏'
       else state.textInfo = '点击查看'
     },
-    hideResult(state) {
+    hideResult (state) {
       state.showResult = false
       state.textInfo = '点击查看'
     }

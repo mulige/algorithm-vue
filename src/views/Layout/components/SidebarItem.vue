@@ -14,33 +14,33 @@
 
 <script>
 export default {
-  name: "SidebarItem",
+  name: 'SidebarItem',
   props: {
     routesdata: {
-      default: () => [],
-    },
+      default: () => []
+    }
   },
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  created() {},
+  created () {},
   computed: {},
   watch: {},
   methods: {
-    toRoute(e) {
-      e.preventDefault();
-      this.$store.commit("hideResult");
-      const parentPath = e.target.getAttribute("data-path");
-      const ownPath = e.target.getAttribute("data-ownpath");
-      const redirect = e.target.getAttribute("data-redirect");
-      if (parentPath === "/") {
-        redirect ? this.$router.push(redirect) : "";
+    toRoute (e) {
+      e.preventDefault()
+      this.$store.commit('hideResult')
+      const parentPath = e.target.getAttribute('data-path')
+      const ownPath = e.target.getAttribute('data-ownpath')
+      const redirect = e.target.getAttribute('data-redirect')
+      if (parentPath === '/') {
+        redirect ? this.$router.push(redirect) : ''
       } else {
-        this.$router.push(`${parentPath}/${ownPath}`);
+        this.$router.push(`${parentPath}/${ownPath}`)
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">

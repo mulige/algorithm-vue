@@ -15,7 +15,7 @@
       <p>示例2：</p>
       <pre><strong>输入:</strong> 8
 <strong>输出:</strong> 2
-<strong>说明:</strong> 8 的平方根是 2.82842..., 
+<strong>说明:</strong> 8 的平方根是 2.82842...,
 &nbsp;    由于返回类型是整数，小数部分将被舍去。
 </pre>
     </div>
@@ -48,18 +48,18 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 export default {
-  name: "",
-  data() {
-    return {};
+  name: '',
+  data () {
+    return {}
   },
   computed: {
-    ...mapState(["showResult", "textInfo"]),
+    ...mapState(['showResult', 'textInfo'])
   },
   watch: {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
 <style scoped lang='scss'>
