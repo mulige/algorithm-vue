@@ -187,6 +187,14 @@ export default [
         }
       },
       {
+        path: 'isPalindromeString',
+        component: () => import(/* webpackChunkName: "125-isPalindrome" */ '@/views/easy/125-isPalindrome.vue'),
+        meta: {
+          title: '125-验证回文串',
+          parentPath: '/easy'
+        }
+      },
+      {
         path: 'singleNumber',
         component: () => import(/* webpackChunkName: "136-singleNumber" */ '@/views/easy/136-singleNumber.vue'),
         meta: {
