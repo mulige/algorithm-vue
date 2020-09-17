@@ -201,6 +201,14 @@ export default [
           title: '136-只出现一次的数字',
           parentPath: '/easy'
         }
+      },
+      {
+        path: 'hasCycle',
+        component: () => import(/* webpackChunkName: "141-hasCycle" */ '@/views/easy/141-hasCycle.vue'),
+        meta: {
+          title: '141-环型链表',
+          parentPath: '/easy'
+        }
       }
     ]
   }
