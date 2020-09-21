@@ -156,7 +156,7 @@ export default [
       },
       {
         path: 'sameTree',
-        component: () => import(/* webpackChunkName: "1-twoSum" */ '@/views/easy/100-sameTree.vue'),
+        component: () => import(/* webpackChunkName: "100-sameTree" */ '@/views/easy/100-sameTree.vue'),
         meta: {
           title: '100-相同的树',
           parentPath: '/easy'
@@ -164,7 +164,7 @@ export default [
       },
       {
         path: 'isSymmetric',
-        component: () => import(/* webpackChunkName: "1-twoSum" */ '@/views/easy/101-isSymmetric.vue'),
+        component: () => import(/* webpackChunkName: "101-isSymmetric" */ '@/views/easy/101-isSymmetric.vue'),
         meta: {
           title: '101-对称二叉树',
           parentPath: '/easy'
@@ -172,7 +172,7 @@ export default [
       },
       {
         path: 'maxDepth',
-        component: () => import(/* webpackChunkName: "1-twoSum" */ '@/views/easy/104-maxDepth.vue'),
+        component: () => import(/* webpackChunkName: "104-maxDepth" */ '@/views/easy/104-maxDepth.vue'),
         meta: {
           title: '104-二叉树最大深度',
           parentPath: '/easy'
@@ -180,9 +180,17 @@ export default [
       },
       {
         path: 'levelOrderBottom',
-        component: () => import(/* webpackChunkName: "1-twoSum" */ '@/views/easy/107-levelOrderBottom.vue'),
+        component: () => import(/* webpackChunkName: "107-levelOrderBottom" */ '@/views/easy/107-levelOrderBottom.vue'),
         meta: {
           title: '107-二叉树的层次遍历',
+          parentPath: '/easy'
+        }
+      },
+      {
+        path: 'maxProfit',
+        component: () => import(/* webpackChunkName: "121-maxProfit" */ '@/views/easy/121-maxProfit.vue'),
+        meta: {
+          title: '121-maxProfit',
           parentPath: '/easy'
         }
       },
